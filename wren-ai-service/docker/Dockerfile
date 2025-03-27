@@ -14,7 +14,7 @@ COPY pyproject.toml ./
 
 RUN poetry install --without dev,eval,test --no-root && rm -rf $POETRY_CACHE_DIR
 
-FROM python:3.12.0-slim-bookworm as runtime
+FROM python:3.13.2-slim-bookworm as runtime
 
 RUN apt-get update && apt install -y netcat-traditional
 
