@@ -1,4 +1,4 @@
-FROM node:23.10.0-alpine3.21 AS base
+FROM node:23.11.1-alpine3.21 AS base
 
 # Install required packages
 RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
